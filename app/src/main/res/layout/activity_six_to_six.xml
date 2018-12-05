@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".SixToSixActivity">
+
+    <GridView
+        android:id="@+id/six"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp" />
+
+    <Chronometer
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/six"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:format="00:00:00"
+        android:textColor="#ff0000"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#3C3F41"
+        android:button="@null"
+        android:checked="false"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="开始" />
+
+</RelativeLayout>
