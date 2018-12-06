@@ -92,7 +92,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.e("this", "onDestroy: this = "+ MainActivity.this);
         OkManager.getInstance().cancelTag(MainActivity.this);
     }
 }

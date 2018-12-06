@@ -1,5 +1,6 @@
 package api;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
@@ -293,6 +294,13 @@ public class OkManager {
                             callBack.onSuccess(baseMode, config.getRequestCode());
                         else
                             callBack.onError(baseMode.getMessage());
+                        //登录失效  重新登录操作
+//                        if (e.getMessage().equals("token失效:-2")) {
+//                            Intent intent = new Intent(App.getAppContext(), LoginActivity.class);
+//                            intent.putExtra("isFromToken", true);
+//                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//                            GlobalApp.getAppContext().startActivity(intent);
+//                        }
                     } catch (JsonSyntaxException e) {
                         callBack.onError("数据格式错误");
                     } catch (Exception e) {

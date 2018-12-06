@@ -190,7 +190,7 @@ public class SixToSixActivity extends AppCompatActivity {
             if (list.get(position).equals(" ")) {
                 holder.textView.setBackgroundColor(Color.WHITE);
             } else {
-                holder.textView.setBackgroundColor(Color.GRAY);
+                holder.textView.setBackgroundColor(Color.parseColor("#C5DFBC"));
             }
             return convertView;
         }

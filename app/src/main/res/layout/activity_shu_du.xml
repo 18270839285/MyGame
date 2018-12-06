@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:numColumns="9"
-        android:background="#567890"
-        android:verticalSpacing="1dp"></GridView>
+        android:background="#935794"
+        android:verticalSpacing="0.5dp"></GridView>
     <Chronometer
         android:id="@+id/time"
         android:layout_width="wrap_content"

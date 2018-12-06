@@ -10,6 +10,7 @@
         android:id="@+id/six"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FBFDE9"
         android:horizontalSpacing="2dp"
         android:verticalSpacing="2dp" />
 

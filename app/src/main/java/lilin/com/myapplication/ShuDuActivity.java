@@ -346,13 +346,13 @@ public class ShuDuActivity extends AppCompatActivity {
             }
             if (newList.get(position) == 0) {
                 holder.textView.setText(" ");
-                holder.textView.setBackgroundColor(Color.GRAY);
+                holder.textView.setBackgroundColor(Color.parseColor("#FBFDE9"));
             } else {
                 holder.textView.setText(newList.get(position) + "");
                 if (posList.contains(position))
-                    holder.textView.setBackgroundColor(Color.GRAY);
+                    holder.textView.setBackgroundColor(Color.parseColor("#FBFDE9"));//#FBFDE9
                 else
-                    holder.textView.setBackgroundColor(Color.parseColor("#567890"));
+                    holder.textView.setBackgroundColor(Color.parseColor("#C5DFBC"));
             }
 
             if (position == pos) {
